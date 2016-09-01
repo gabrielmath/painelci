@@ -1,0 +1,104 @@
+@screen-xs-max: 768px;
+@screen-sm-min: 769px;
+@screen-sm-max: 991px;
+@screen-md-min: 992px;
+@screen-md-max: 1199px;
+@screen-lg-min: 1200px;
+
+@laranja: #F27922;
+@roxo: #9E288B;
+@rosa: #E81B64;
+@verdeClaro: #9EBC35;
+@verdeEscuro: #00995D;
+@cinza: #eee;
+@cinzaE: #ddd;
+@cinzaEE: #bbb;
+@branco: #fff;
+@preto: #000;
+
+
+
+.border-radius( @r1: 5px; @r2: 5px; @r3: 5px; @r4: 5px; ){
+	-webkit-border-radius: @arguments;
+	-moz-border-radius: @arguments;
+	-ms-border-radius: @arguments;
+	-o-border-radius: @arguments;
+	border-radius: @arguments;
+}
+
+.efeitoMenuAnimacao(@angulo: 0deg){
+	-webkit-transform: rotate(@angulo);
+	-moz-transform: rotate(@angulo);
+	-o-transform: rotate(@angulo);
+	-ms-transform: rotate(@angulo);
+	transform: rotate(@angulo);
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+
+.box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+  -webkit-box-shadow: @arguments;
+     -moz-box-shadow: @arguments;
+          box-shadow: @arguments;
+}
+
+.text-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000){
+  -webkit-text-shadow: @arguments;
+     -moz-text-shadow: @arguments;
+          text-shadow: @arguments;
+}
+
+.transition(@tempo: 0.8s){
+	-webkit-transition: all @tempo ease;
+	-moz-transition: all @tempo ease;
+	-o-transition: all @tempo ease;
+	transition: all @tempo ease;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.textoCentralizado{
+	text-align: center;
+}
+
+.textoDireito{
+	text-align: right;
+}
+
+.textoEsquerdo{
+	text-align: left;
+}
+
+.textoJustificado{
+	text-align: justify;
+}
+
+.esconde{
+	display: none;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.loginform{
+	margin-top: 100px;
+}
+
+#footer{
+	width: 100%;
+}
+
+a.but{
+	margin: 0 5px;
+}

@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine on
+#RewriteCond %{http_host} ^www.site.com.br [NC]
+#RewriteRule ^(.*)$ http://site.com.br/$1 [r=301,NC]
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule .* index.php/$1 [L]
